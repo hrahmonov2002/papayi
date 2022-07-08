@@ -1,0 +1,26 @@
+.footer__links {
+    padding: 31px 164px 31px 165px;
+    background-color: #1b262f;
+}
+
+@media only screen and (max-width: 1050px) {
+    .footer__links {
+        padding: 31px 85px 31px 85px;
+    }
+    
+}
+
+@media only screen and (max-width: 610px) {
+    .footer__links {
+        padding: 31px 0px 31px 0px;
+    }
+    
+}
+
+@media only screen and (max-width: 560px) {
+    .footer__links {
+        padding: 41px 121px 55px 121px;
+    }
+    
+}
+

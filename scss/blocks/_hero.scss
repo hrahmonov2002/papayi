@@ -1,0 +1,154 @@
+.hero__inner {
+    display: flex;
+}
+
+.hero__content {
+   max-width: 546px;
+}
+
+.hero__heading {
+  margin: 0;
+  margin-bottom: 60px;
+  font-family: 'DM Serif Display';
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 72px;
+  color: #36536B;
+}
+
+.hero__label {
+    display: flex;
+}
+
+.hero__email {
+    padding: 16px 276px 14px 27px;
+    outline: none;
+    border: none;
+    background-color: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+}
+
+.hero__email::placeholder {
+    font-weight: 700;
+    color: #36536b;
+    opacity: 0.5;
+}
+
+.hero__email:hover {
+    cursor: pointer;
+}
+
+.hero__img {
+   width: 263px;
+   height: 500px;
+   margin-left: 206px;
+   border-radius: 10%;
+}
+
+.hero__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 18px;
+    color: #6C8294;   
+}
+
+.hero__span {
+    font-weight: 700;
+}
+
+@media only screen and (max-width: 1130px) {
+    .hero__img {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1130px) {
+    .hero__img {
+        margin-left: 20px;
+    }
+}
+
+@media only screen and  (max-width: 768px){
+    .hero__inner {
+      max-width: 770px;
+      display: flex;
+      align-items: center;
+      flex-direction: column-reverse;
+    }
+
+    .hero__content {
+        margin-left: 40px;
+    }
+
+    .hero__heading {
+       font-size: 48px;
+       line-height: 56px;
+    }
+
+    .hero__text {
+        margin-left: 100px;
+    }
+
+    .hero__img {
+        width: 159px;
+        height: 300px;
+        margin: 0;
+        margin-bottom: 48px;
+    }
+   }
+
+@media only screen and (max-width: 586px) {
+    .hero__label {
+       margin-left: 30px;
+    }
+}
+
+@media only screen and (max-width: 518px) {
+    .hero__content {
+        margin: 0;
+    }
+    
+    .hero__label {
+       margin: 0;
+    }
+}
+
+@media only screen and (max-width: 443px) {
+    .hero__email {
+        padding: 16px 230px 14px 27px;
+    }
+}
+
+@media only screen and (max-width: 402px) {
+    .hero__content {
+        text-align: center;
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero__email {
+        padding: 16px 158px 14px 27px;
+        margin-bottom: 16px;
+    }
+
+    .hero__text {
+        margin-left: 0;
+    }
+}
+
+@media only screen and (max-width: 332px) {
+    .hero__email {
+        padding: 16px 130px 14px 27px;
+    }
+}

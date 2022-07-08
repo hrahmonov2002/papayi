@@ -1,0 +1,65 @@
+.cite__links {
+  background-image: url(../../images/hero-bg-img.png);
+  background-size: 1290px 880px;
+  background-position-x:  calc(50% - -733px);
+  background-position-y: calc(50% - -178px);
+  mix-blend-mode: normal;
+  background-repeat: no-repeat;
+  padding: 40px 165px 40px 165px;
+  display: flex;
+  justify-content: space-between;
+  background-color: #edf3f8;
+}
+
+.cite__hamburger {
+  display: none;
+}
+
+@media only screen and  (max-width: 1060px){
+  .cite__links {
+    padding: 40px 85px 40px 85px;
+  }
+}
+
+@media only screen and  (max-width: 830px){
+  .cite__links {
+    padding: 40px 65px 40px 65px;
+  }
+}
+
+@media only screen and  (max-width: 768px){
+  .cite__links {
+    background-position-x:  calc(50% - 0px);
+    padding: 40px 40px 40px 39px;
+  }
+}
+
+@media only screen and  (max-width: 680px){
+  .cite__links {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media only screen and  (max-width: 680px){
+  .cite__links {
+    padding: 40px 0px 40px 0px;
+  }
+}
+
+@media only screen and  (max-width: 570px){
+  .cite__links {
+    padding: 40px 40px 40px 40px;
+  }
+
+  .cite__hamburger {
+    width: 28px;
+    height: 17px;
+    display: block;
+  }
+}
+
+@media only screen and  (max-width: 570px){
+  .cite__links {
+    padding: 40px 24px 40px 24px;
+  }
+}

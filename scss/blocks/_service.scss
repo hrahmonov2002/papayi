@@ -1,0 +1,228 @@
+.service__list {
+    @include list-unnderline;
+    display: flex;
+}
+
+.service__item--first {
+    text-align: center;
+    width: 350px;
+}
+
+.service__item {
+    text-align: center;
+    width: 350px;
+    margin-left: 30px;
+}
+
+.service__item--first::before {
+    content: "";
+    display: block;
+    width: 106px;
+    height: 106px;
+}
+
+.service__item--first::before {
+   background-image: url(../../images/service-img-1.svg);
+   background-size: 106px 106px;
+   margin-left: 120px;
+}
+
+.service__item::before {
+    content: "";
+    display: block;
+    width: 106px;
+    height: 106px;
+}
+
+.service__item:nth-child(2)::before {
+    background-image: url(../../images/service-img-2.svg);
+    background-size: 106px 106px;
+    margin-left: 120px;
+}
+
+.service__item:nth-child(3)::before {
+    background-image: url(../../images/service-img-3.svg);
+    background-size: 106px 106px;
+    margin-left: 120px;
+}
+
+.service__title {
+    margin: 0;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: -0.138462px;
+    color: #36536B;       
+}
+
+.service__text {
+    margin: 0;
+    line-height: 25px;
+    letter-spacing: -0.115385px;
+    color: #6C8294;   
+}
+
+.service__content {
+    margin-top: 96px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.service__content-heading {
+    margin: 0;
+    font-family: 'DM Serif Display';
+    font-size: 48px;
+    line-height: 56px;   
+    color: #36536b;
+}
+
+.service__email {
+    padding: 16px 276px 14px 27px;
+    outline: none;
+    border: none;
+    background-color: #fbfcfe;
+    box-shadow: 10px 10px 25px -10px rgba(54, 83, 107, 0.25);
+    border-radius: 24px;
+}
+
+.service__email::placeholder {
+    font-weight: 700;
+    color: #36536b;
+    opacity: 0.5;
+}
+
+@media only screen and (max-width: 1150px) {
+    .service__item--first::before {
+        margin-left: 100px;
+     }
+     
+    
+    .service__item:nth-child(2)::before {
+        margin-left: 100px;
+    }
+    
+    .service__item:nth-child(3)::before {
+        margin-left: 100px;
+    }
+}
+
+@media only screen and (max-width: 1070px) {
+    .service__item--first::before {
+        margin-left: 70px;
+     }
+     
+    
+    .service__item:nth-child(2)::before {
+        margin-left: 70px;
+    }
+    
+    .service__item:nth-child(3)::before {
+        margin-left: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .service__content {
+        max-width: 700px;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .service__content-heading {
+        margin-bottom: 40px;
+    }
+
+    .service__item--first {
+        max-width: 223px;
+    }
+
+    .service__item {
+        max-width: 223px;
+    }
+
+    .service__item--first::before {
+        margin-left: 50px;
+     }
+     
+    
+    .service__item:nth-child(2)::before {
+        margin-left: 50px;
+    }
+    
+    .service__item:nth-child(3)::before {
+        margin-left: 50px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+   .service__list {
+    max-width: 800px;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .service__item--first {
+    max-width: 328px;
+    margin-bottom: 48px;
+   }
+
+   .service__item {
+    margin: 0;
+    max-width: 328px;
+   }
+
+   .service__item:nth-child(2) {
+    margin: 0;
+    margin-bottom: 48px;
+   }
+
+   .service__item--first::before {
+    margin-left: 100px;
+   }
+ 
+
+  .service__item:nth-child(2)::before {
+    margin-left: 100px;
+  }
+
+  .service__item:nth-child(3)::before {
+    margin-left: 100px;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+    .service__label {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .service__email {
+        padding: 16px 158px 14px 27px;
+    }
+ }
+
+ @media only screen and (max-width: 375px) {
+    .service__content-heading {
+        font-size: 32px;
+        line-height: 36px;   
+    }
+
+    .service__email {
+        padding: 16px 130px 14px 27px;
+    }
+ }
+ @media only screen and (max-width: 325px) {
+  .service__item--first {
+    max-width: 320px;
+    margin-bottom: 48px;
+   }
+
+   .service__item {
+    margin: 0;
+    max-width: 315px;
+   }
+ }
+ 
+ 

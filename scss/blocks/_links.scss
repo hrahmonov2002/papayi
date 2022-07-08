@@ -1,0 +1,129 @@
+.links__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links__content-logo {
+    display: flex;
+    width: 432px;
+}
+
+.links__list {
+    @include list-unnderline;
+    display: flex;
+    margin-top: 6px;
+}
+
+.links__item {
+    margin: 0;
+    margin-left: 40px;
+}
+
+.links__link {
+    text-decoration: none;
+    color: #fbfcfe;
+    opacity: 0.7;
+}
+
+.links__link:hover {
+    color: #fbfcfe;
+    opacity: 1;
+}
+
+.links__content-list {
+    @include list-unnderline;
+    margin: 6px;
+    display: flex;
+}
+
+.links__content-item {
+    margin-left: 24px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+}
+
+.icon:hover {
+    fill: #da6d97;
+    width: 24px;
+    height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .links__item:nth-child(1) {
+        margin-left: 64px;
+    } 
+}
+
+@media only screen and (max-width: 676px) {
+    .links__item:nth-child(1) {
+        margin-left: 40px;
+    } 
+}
+
+@media only screen and (max-width: 560px) {
+   .links__inner {
+    max-width: 500px;
+    flex-direction: column;
+   }
+
+   .links__content-logo {
+    max-width: 270px;
+    align-items: center;
+    flex-direction: column;
+   }
+
+   .links__list {
+    flex-direction: column;
+   }
+
+   .links__item {
+    margin-bottom: 31px;
+   }
+
+   .links__item:nth-child(1) {
+    margin-top: 40px;
+   }
+
+   .links__content-list {
+     margin-left: 65px;
+   }
+}
+
+@media only screen and (max-width: 480px) {
+    .links__content-logo {
+     max-width: 200px;
+     align-items: center;
+     flex-direction: column;
+    }
+ 
+    .links__content-list {
+      margin-left: 30px;
+    }
+ }
+
+ @media only screen and (max-width: 430px) {
+    .links__content-logo {
+     max-width: 120px;
+     align-items: center;
+     flex-direction: column;
+    }
+ 
+    .links__content-list {
+      margin-left: -10px;
+    }
+ }
+
+ @media only screen and (max-width: 350px) {
+    .links__content-logo {
+     max-width: 50px;
+     align-items: center;
+     flex-direction: column;
+    }
+ 
+    .links__content-list {
+      margin-left: -40px;
+    }
+ }
